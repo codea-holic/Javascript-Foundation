@@ -1,7 +1,6 @@
-
 // Bhai array ka bhi function ban jata hai...
 // isse ghabrana wali koi baat nhi hai 😀
-// let arr = [f, g, h];
+let arr = [f, g, h];
 
 /*
 These are also a method of declaring function and arrays
@@ -36,3 +35,14 @@ function h(x) {
 // ques- h(g(f(5)));
 let ans = arr.reduce((pv, cv, i) => cv(pv), 5);
 console.log(`Answer is ${ans}`);
+
+// ques - f(g(h(x)))
+ans = arr.reduce((pv, cv) => cv(pv), 10);
+console.log(`Answer is ${ans}`);
+
+// 10, f
+// f(10), g
+// g(f(10)), h
+// h(g(f(10))) -> its easy but we required f(g(h(x)));
+
+// We can use reduce by reversing array or also we can use reduceRight()
