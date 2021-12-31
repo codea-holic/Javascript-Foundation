@@ -37,3 +37,10 @@ arr = [17, 2, 32, 14, 54, 26, 71];
 // Return cubes whose square is less than 1000.
 res = arr.filter(v => v * v < 1000).map(v => v * v * v);
 console.log(res);
+
+
+// Question:3-
+arr = [17, 2, 32, 14, 54, 26, 71];
+
+let mres = arr.map(v=>v % 2 == 1);
+let fres = arr.filter(v=>v % 2 == 1);
