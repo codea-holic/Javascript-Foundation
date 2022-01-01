@@ -9,6 +9,7 @@ let ioRes = arr.indexOf(30); // firstIndex or -1
 let lioRes = arr.lastIndexOf(30); // last index or -1
 let iRes = arr.includes(30); // true or false
 
+// Used for Complex searches
 // give me the first value above 50
 let fRes = arr.find(function(v, i, oarr){
     return v > 50;
