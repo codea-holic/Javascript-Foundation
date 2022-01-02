@@ -12,11 +12,14 @@ function isPrime(num){
     return isPrime;
 }
 
-console.log(arr.splice(0,1));
+// This is used for custom functions.
+// splice -> 1st arg => knha se remove krna hai
+//           2nd arg => kitne numbers ko remove krna hai (offset)
+console.log(arr.splice(-1,1));
 
 for(let i = arr.length - 1; i >= 0; i--){
     if(!isPrime(arr[i])){
-        arr.splice(i,1);
+        arr.splice(i,1);     
     }
 }
 
